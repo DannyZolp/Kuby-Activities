@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/startUSA.swf" -O "us/index.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/inter.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/TControl.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/gr.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/gr2.swf"
+
+for VARIABLE in {2..21}; do
+  wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/map$VARIABLE.swf"
+  wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch01/map${VARIABLE}prew.swf"
+done
