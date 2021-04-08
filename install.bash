@@ -35,6 +35,9 @@ wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity01/sp
 echo Generating 11.2 Urban Sprawl
 cd ../urban-sprawl
 wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity02/index.swf" -O "index.swf"
+cd ./enlarge
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity02/enlarge.swf" -O "index.swf"
+cd ..
 
 echo Generating 12.1 Mapping Religious Affilation
 cd ../religious-affiliation
