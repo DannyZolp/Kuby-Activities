@@ -1,0 +1,12 @@
+# All scraped data
+*.swf
+*.jpg
+
+# The ruffle dir
+/ruffle
+
+# Ruffle download zip
+ruffle.zip
+
+# Gitpod config (gitpod is kinda dumb)
+.gitpod.yml

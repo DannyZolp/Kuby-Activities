@@ -1,0 +1,59 @@
+#!/bin/bash
+
+echo Generating 1.2 Thematic Maps
+cd thematic-maps
+chmod +x getMaps
+./getMaps
+
+echo Generating 2.1 Mapping Culture Regions USSW
+cd ../cultureregions-ussw
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch02/testDraw4.swf" -O "index.swf"
+
+echo Generating 2.1 Mapping Culture Regions ME
+cd ../cultureregions-me
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch02/testDraw5.swf" -O "index.swf"
+
+echo Generating 4.1/4.2/4.3 Gravity Model
+cd ../gravity-model
+./getData
+
+echo Generating 5.1 Population Pyramids
+cd ../population-pyramids
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch05/activity01/screen_0.swf" -O "index.swf"
+
+echo Generating 8.1 Agricultural Landscapes
+cd ../agricultural-landscapes
+cd 01
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch08/activity01/screen_0.swf" -O "index.swf"
+cd ..
+chmod +x getImages
+./getImages
+
+echo Generating 9.2 Market Area
+cd ../market-area
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch09/flash/index.swf" -O "index.swf"
+
+echo Generating 11.1 Transportation and Urban Growth
+cd ../urban-growth
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity01/sprawl.swf" -O "index.swf"
+
+echo Generating 11.2 Urban Sprawl
+cd ../urban-sprawl
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity02/index.swf" -O "index.swf"
+cd ./enlarge
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch11/activity02/enlarge.swf" -O "index.swf"
+cd ..
+
+echo Generating 12.1 Mapping Religious Affilation
+cd ../religious-affiliation
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity01/index.swf" -O "index.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity01/ireland1971.swf" -O "ireland1971.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity01/ireland1991.swf" -O "ireland1991.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity01/ireland2011.swf" -O "ireland2011.swf"
+
+echo Generating 12.2 Index of Segregation
+cd ../index-segregation
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity02/indeh.swf" -O "index.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity02/Table_ireland1971.swf" -O "Table_ireland1971.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity02/Table_ireland1991.swf" -O "Table_ireland1991.swf"
+wget "https://www.wiley.com/college/kuby/1118422570/compchact/ch12/activity02/Table_ireland2011.swf" -O "Table_ireland2011.swf"

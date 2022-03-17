@@ -1,0 +1,16 @@
+#!/bin/bash
+
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/index.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/splash.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/CanadaProvinces.swf"
+wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/USAStates.swf"
+
+for VARIABLE in {1..51}
+do
+	wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/USAtable$VARIABLE.swf"
+done
+
+for VARIABLE in {1..13}
+do
+  wget "https://www.wiley.com//college/kuby/1118422570/compchact/ch04/CANADAtable$VARIABLE.swf"
+done

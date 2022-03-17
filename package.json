@@ -1,0 +1,13 @@
+{
+  "name": "kuby-activities",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/DannyZolp/Kuby-Activities.git",
+  "author": "Danny Zolp <danny@zolp.dev>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:ruffle && npm run build:scrape",
+    "build:ruffle": "rm -rf ruffle && mkdir ruffle && node ruffle.js",
+    "build:scrape": "chmod +x scrape && ./scrape"
+  }
+}
